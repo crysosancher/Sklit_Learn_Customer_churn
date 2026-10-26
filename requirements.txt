@@ -1,0 +1,8 @@
+# Customer churn POC dependencies
+numpy>=2.0
+pandas>=2.2
+scikit-learn>=1.5
+xgboost>=2.1
+matplotlib>=3.9
+seaborn>=0.13
+shap>=0.46

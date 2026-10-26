@@ -1,0 +1,250 @@
+{
+  "dataset": {
+    "n_rows": 20000,
+    "n_features": 41,
+    "n_numeric": 26,
+    "n_categorical": 15,
+    "churn_rate": 0.24795
+  },
+  "test_metrics": {
+    "accuracy": 0.771,
+    "balanced_accuracy": 0.7443698524365134,
+    "precision": 0.529320987654321,
+    "recall": 0.6915322580645161,
+    "f1": 0.5996503496503497,
+    "roc_auc": 0.8211037368093685,
+    "pr_auc": 0.6301184771480614,
+    "log_loss": 0.47318610548973083,
+    "brier_score": 0.15543481707572937,
+    "matthews_corrcoef": 0.45098960299873925,
+    "cohen_kappa": 0.4432233719754143,
+    "mcfadden_pseudo_r2": 0.1552168036609386,
+    "d2_log_loss": 0.15521676648454086
+  },
+  "cross_validation": {
+    "accuracy": {
+      "mean": 0.786125,
+      "std": 0.008818039039378304,
+      "folds": [
+        0.7809375,
+        0.78625,
+        0.798125,
+        0.7925,
+        0.7728125
+      ]
+    },
+    "balanced_accuracy": {
+      "mean": 0.726766806319568,
+      "std": 0.007595128830996345,
+      "folds": [
+        0.7186675999121939,
+        0.731500337131454,
+        0.7334749267976808,
+        0.7337512641569879,
+        0.7164399035995235
+      ]
+    },
+    "precision": {
+      "mean": 0.5640766751392374,
+      "std": 0.01821233123398382,
+      "folds": [
+        0.5539906103286385,
+        0.5620022753128555,
+        0.5904059040590406,
+        0.5764705882352941,
+        0.5375139977603584
+      ]
+    },
+    "recall": {
+      "mean": 0.6090235403610306,
+      "std": 0.009844531675104184,
+      "folds": [
+        0.5952080706179067,
+        0.6229508196721312,
+        0.605296343001261,
+        0.6171284634760705,
+        0.6045340050377834
+      ]
+    },
+    "f1": {
+      "mean": 0.5855384467473291,
+      "std": 0.011814146066449102,
+      "folds": [
+        0.5738601823708207,
+        0.5909090909090909,
+        0.597758405977584,
+        0.5961070559610706,
+        0.5690574985180794
+      ]
+    },
+    "roc_auc": {
+      "mean": 0.8210817997157136,
+      "std": 0.009299317148595037,
+      "folds": [
+        0.8181019944455825,
+        0.8183524199856346,
+        0.8356820769183619,
+        0.8256740600220691,
+        0.8075984472069196
+      ]
+    },
+    "pr_auc": {
+      "mean": 0.6146168480698725,
+      "std": 0.014894307410043557,
+      "folds": [
+        0.6133733577133527,
+        0.6138318146480671,
+        0.6256626476773283,
+        0.6318380755452131,
+        0.5883783447654005
+      ]
+    },
+    "neg_log_loss": {
+      "mean": -0.4553681671619415,
+      "std": 0.014148272865914848,
+      "folds": [
+        -0.4559606909751892,
+        -0.46160590648651123,
+        -0.43437647819519043,
+        -0.4479457139968872,
+        -0.47695204615592957
+      ]
+    },
+    "matthews": {
+      "mean": 0.44243346710189274,
+      "std": 0.017670322054499466,
+      "folds": [
+        0.4271891650177833,
+        0.44784141622394064,
+        0.4630985274836164,
+        0.45719201074271254,
+        0.41684621604141064
+      ]
+    }
+  },
+  "model": {
+    "n_estimators": 600,
+    "learning_rate": 0.05,
+    "max_depth": 6,
+    "min_child_weight": 2,
+    "subsample": 0.85,
+    "colsample_bytree": 0.85,
+    "reg_lambda": 1.0,
+    "scale_pos_weight": 3.03327451474666,
+    "early_stopping_rounds": 50,
+    "best_iteration": 161,
+    "best_validation_auc": 0.8316767150073325
+  },
+  "feature_importance_top": [
+    {
+      "feature": "tenure_months",
+      "importance": 0.10384267568588257
+    },
+    {
+      "feature": "num_complaints",
+      "importance": 0.04803277552127838
+    },
+    {
+      "feature": "contract_type_Month-to-month",
+      "importance": 0.04541872814297676
+    },
+    {
+      "feature": "loyalty_points",
+      "importance": 0.030135763809084892
+    },
+    {
+      "feature": "num_customer_service_calls",
+      "importance": 0.02977258898317814
+    },
+    {
+      "feature": "contract_type_Two year",
+      "importance": 0.027677971869707108
+    },
+    {
+      "feature": "refund_requests",
+      "importance": 0.025798076763749123
+    },
+    {
+      "feature": "late_payment_count",
+      "importance": 0.02469956874847412
+    },
+    {
+      "feature": "contract_type_One year",
+      "importance": 0.021939020603895187
+    },
+    {
+      "feature": "tech_support_Yes",
+      "importance": 0.020591458305716515
+    },
+    {
+      "feature": "internet_service_DSL",
+      "importance": 0.020579999312758446
+    },
+    {
+      "feature": "avg_ticket_resolution_days",
+      "importance": 0.019329925999045372
+    },
+    {
+      "feature": "monthly_charges",
+      "importance": 0.018903929740190506
+    },
+    {
+      "feature": "credit_score",
+      "importance": 0.018602382391691208
+    },
+    {
+      "feature": "promotional_offers_accepted",
+      "importance": 0.017512008547782898
+    },
+    {
+      "feature": "days_since_last_interaction",
+      "importance": 0.016939567402005196
+    },
+    {
+      "feature": "email_open_rate",
+      "importance": 0.016526246443390846
+    },
+    {
+      "feature": "num_logins_per_month",
+      "importance": 0.016404898837208748
+    },
+    {
+      "feature": "tech_support_No",
+      "importance": 0.015907999128103256
+    },
+    {
+      "feature": "online_security_Yes",
+      "importance": 0.01576678454875946
+    },
+    {
+      "feature": "senior_citizen",
+      "importance": 0.014064200222492218
+    },
+    {
+      "feature": "total_data_usage_gb",
+      "importance": 0.013562341220676899
+    },
+    {
+      "feature": "customer_lifetime_value",
+      "importance": 0.01316604670137167
+    },
+    {
+      "feature": "payment_method_Bank transfer",
+      "importance": 0.013125588186085224
+    },
+    {
+      "feature": "total_charges",
+      "importance": 0.013113394379615784
+    }
+  ],
+  "confusion_matrix": [
+    [
+      2398,
+      610
+    ],
+    [
+      306,
+      686
+    ]
+  ]
+}
